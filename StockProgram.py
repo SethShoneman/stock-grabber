@@ -2,6 +2,7 @@ import requests
 import json
 from datetime import datetime
 
+# grab information on given stocks, and create a wanted number of files containing that information
 def stockFunc(num,stocks):
     for x in range(int(num)):
         #gets data from API
@@ -26,6 +27,7 @@ def stockFunc(num,stocks):
             values.append(stockValues)
 
         #changes name of file
+        #this is where I placed the files, the path would be changed to where output files are wanted         
         name = 'C:\\Users\\sidda\\Documents\\ameritrade\\outputFiles'+"\\output"+str(x+1)+".csv"
         print(name)
 
