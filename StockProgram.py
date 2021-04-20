@@ -28,7 +28,7 @@ def stockFunc(num,stocks):
                     offsetError = True
                 elementNum += 1
 
-        # initially populates value two dimensional array with titles for easier csv reading
+        # initially populates two dimensional array with titles for easier csv reading
         stockTitles = []
         elementNum = 1
         for val in data[stockList[0]].keys():
