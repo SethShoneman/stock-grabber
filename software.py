@@ -3,7 +3,8 @@ import StockProgram
 
 # pass the desired stock tickers and the amount of desired output files into the StockProgram, which will grab and output the data
 def passValues():
-    StockProgram.stockFunc(numberEntry.get(), stockEntry.get())
+    stockEntryNoSpaces = stockEntry.get().replace(" ", "")
+    StockProgram.stockFunc(numberEntry.get(), stockEntryNoSpaces)
     
 # create a new window, and add labels, entries, and button for use
 window = Tk()
