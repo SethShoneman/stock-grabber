@@ -7,8 +7,8 @@ This program is a graphic user interface which allows the user to grab data on d
 
 ## Files
 ### software.py
-This is the file that is actually run, and will result in a GUI opening on the screen. The symbols of the desired stocks should be entered, each separated by commas (Ex. "T, GOOG, MSFT"), in the corresponding entry box. The other box is for the number of output files desired, which will all contain information on every stock entered on subsequent lines.
+This is the file that is actually run, and will result in a GUI opening on the screen. The symbols of the desired stocks should be entered, each separated by commas with or withour spaces (Ex. "T, GOOG, MSFT"), in the corresponding entry box. The other box is for the number of output files desired, which will all contain information on every stock entered on subsequent lines.
 ### StockProgram.py
 This contains the function that accesses the API, obtaining the stock data. It then creates files that contains that data. *WHEN SETTING UP, MUST CHANGE THE PATH OF FILE CREATION IN LINE 31 TO DESIRED FOLDER, WHILE STILL RETAINING THE +"\\output"+str(x+1)+".csv" AT END OF PATH*.
 ### ExampleOutput.csv
-This is an example of an outputted file with input of stock symbols "T,GOOG,UMC", and the creation of a single output file.
+This is an example of an outputted file with input of stock symbols "GOOG, T, UMC", and the creation of a single output file.
